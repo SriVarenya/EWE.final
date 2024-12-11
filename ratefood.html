@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rate this Place</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h2>Rate this Place</h2>
+    <form action="submit_rating.php" method="post">
+        <label for="rating">Rate this place:</label>
+        <select name="rating" id="rating">
+            <option value="5">5 - Excellent</option>
+            <option value="4">4 - Very Good</option>
+            <option value="3">3 - Good</option>
+            <option value="2">2 - Fair</option>
+            <option value="1">1 - Poor</option>
+        </select>
+
+        <br>
+
+        <label for="description">Why did you rate it this way?</label>
+        <textarea name="description" id="description" rows="4" cols="50" required></textarea>
+
+        <br>
+
+        
+    
+    <input type="submit" value="Next">
+    </form>
+    <button><a href="page7.html">Submit</a></button>
+</body>
+</html>

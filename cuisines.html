@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delhi Cuisine Selector</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h2>Select your favorite Delhi cuisine:</h2>
+    <select id="cuisineDropdown">
+        <option value="chaat">Chaat</option>
+        <option value="chole_bhature">Chole Bhature</option>
+        <option value="kebabs_rolls">Kebabs and Rolls</option>
+        <option value="paranthas">Paranthas</option>
+        <option value="butter_chicken">Butter Chicken</option>
+        <option value="momos">Momos</option>
+        <option value="rabri_falooda_kulfi">Rabri Falooda and Kulfi</option>
+        <option value="chole_kulche">Chole Kulche</option>
+    </select>
+    <button onclick="showRestaurants()">Show Restaurants</button>
+
+    <div id="restaurantList"></div>
+
+    <script>
+        function showRestaurants() {
+            var dropdown = document.getElementById("cuisineDropdown");
+            var selectedCuisine = dropdown.options[dropdown.selectedIndex].value;
+            var restaurantList = document.getElementById("restaurantList");
+            var restaurants = [];
+
+            if (selectedCuisine === "chaat") {
+                restaurants = ["GT ROAD", "Baluchi"];
+            } else if (selectedCuisine === "chole_bhature") {
+                restaurants = ["Indian Accent", "Baluchi", "The Lodhi"];
+            } else if (selectedCuisine === "kebabs_rolls") {
+                restaurants = ["Indian Accent", "Baluchi"];
+            } else if (selectedCuisine === "paranthas") {
+                restaurants = ["GT ROAD", "The Lodhi"];
+            } else if (selectedCuisine === "butter_chicken") {
+                restaurants = ["Indian Accent"];
+            } else if (selectedCuisine === "momos") {
+                restaurants = ["The Lodhi"];
+            } else if (selectedCuisine === "rabri_falooda_kulfi") {
+                restaurants = ["Indian Accent", "The Lodhi"];
+            } else if (selectedCuisine === "chole_kulche") {
+                restaurants = ["GT ROAD", "The Lodhi"];
+            }
+
+            restaurantList.innerHTML = "Nearest restaurants for " + selectedCuisine + ":<ul>";
+            for (var i = 0; i < restaurants.length; i++) {
+                restaurantList.innerHTML += "<li>" + restaurants[i] + "</li>";
+            }
+            restaurantList.innerHTML += "</ul>";
+        }
+    </script>
+     <input type="submit" value="Next">
+    </form>
+    <button><a href="ratefood.html">Submit</a></button>
+</body>
+</html>

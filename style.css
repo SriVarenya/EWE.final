@@ -1,0 +1,67 @@
+/* styles.css */
+
+/* Reset some default margin and padding for elements */
+body, h1, p, form, label, input, button {
+    margin: 10px;
+    padding: 0;
+    font-size: 30px;
+}
+
+body {
+    font-family: monospace, 'Courier New', Courier, monospace;
+    background-color: #e2b984;
+    text-align: center;
+    margin: 100px;
+    padding: 5px;
+    font-size: 18px;
+    background-image: url('FP2.jpg'); /* Replace 'your-image-url.jpg' with the URL of your image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1 {
+    background-color: #013b23;
+    color: #f7f4f3;
+    padding: 20px 0;
+    font-size: 24px;
+}
+
+form {
+    margin: 100px;
+}
+
+label {
+    display: inline-block;
+    margin: 10px 0;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #013b23;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 500px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #2980b9;
+}

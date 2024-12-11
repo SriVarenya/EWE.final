@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dropdown Menu</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <label for="menu">Select an option:</label>
+    <select id="menu" onchange="redirect()">
+        <option value="places">Places</option>
+        <option value="cuisines">Cuisines</option>
+        <option value="travel">Travel</option>
+    </select>
+    <input type="submit" value="Next">
+    
+    <script>
+        function redirect() {
+            var selectElement = document.getElementById("menu");
+            var selectedOption = selectElement.options[selectElement.selectedIndex].value;
+            
+            if (selectedOption === "places") {
+                window.location.href = "places.html";
+            } else if (selectedOption === "cuisines") {
+                window.location.href = "cuisines.html";
+            } else if (selectedOption === "travel") {
+                window.location.href = "travel.html";
+            }
+        }
+    </script>
+    </select>
+    <input type="submit" value="next">
+    </form>
+    <button><a href="places.html">Submit</a></button>
+
+</select>
+<input type="submit" value="main page">
+</form>
+<button><a href="index.html">Submit</a></button>
+   
+</body>
+</html>

@@ -1,0 +1,62 @@
+/* Reset some default styles for better consistency */
+body, h1, p {
+    margin: 10px;
+    padding: 0;
+}
+
+/* Set a background image and some basic styles for the entire page */
+body {
+    background-image: url('ann.jpg'); /* Replace with your background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    color: #fdfdfd; /* Text color */
+}
+
+/* Style the header with a background color and center the text */
+header {
+    background-color: #2e86de; /* Header background color */
+    text-align: center;
+    padding: 0px;
+}
+
+/* Style the h1 heading in the header */
+header h1 {
+    font-size: 300px;
+    color: #fff; /* Heading text color */
+}
+
+/* Style the main content area */
+.main-content {
+    max-width: 800px;
+    margin: 30px;
+    padding: 200px;
+    background-color: #fff; /* Content background color */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(235, 23, 23, 0.2);
+}
+
+/* Style text within the content area */
+.main-content p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Style a "START" button */
+.start-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #de742e; /* Button background color */
+    color: #fff; /* Button text color */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+/* Hover effect for the button */
+.start-button:hover {
+    background-color: #1f65c6; /* Button background color on hover */
+}
